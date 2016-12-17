@@ -43,6 +43,7 @@ function homePageHandler (req, res)
     'charset=UTF-8" />'+
   '</head>'+
   '<body>'+
+  '<h1>Hallo Aachen!</h1>' +
     '<form action="/register" method="post">'+
       'Name:<input type=text value="" name="name" size=15></br>'+
       'Email:<input type=text value="" name="email" size=15></br>'+
