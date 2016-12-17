@@ -44,9 +44,9 @@ function homePageHandler (req, res)
   '</head>'+
   '<body>'+
     '<form action="/register" method="post">'+
-      'Nombre:<input type=text value="" name="name" size=15></br>'+
+      'Name:<input type=text value="" name="name" size=15></br>'+
       'Email:<input type=text value="" name="email" size=15></br>'+
-      '<input type="submit" value="Agregar" />'+
+      '<input type="submit" value="Absenden" />'+
     '</form>'+
   '</body>'+
   '</html>';
@@ -81,7 +81,7 @@ function registerFormHandler (req, res)
       var decodedBody = querystring.parse(postData);      
       
       // output de los datos decodificados         
-      res.write('<html><head><title>Datos enviados</title></head><body><pre>');
+      res.write('<html><head><title>Demo Anwendung</title></head><body><pre>');
       res.write(utils.inspect(decodedBody));    
       res.write('</pre></body></html>');       
       res.end();
